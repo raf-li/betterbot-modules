@@ -1,0 +1,30 @@
+[
+  {
+    "folder": "example_module",
+    "name": "Example Module",
+    "version": "1.0.0",
+    "author": "Rafli",
+    "description": "BetterBot Framework demonstration module. Shows how to create commands, use shared_data, and hook into events.",
+    "category": "developer-tools",
+    "min_core_version": "1.0.0",
+    "files": [
+      "__init__.py",
+      "module.ini",
+      "utils.py",
+      "locales/en.json"
+    ]
+  },
+  {
+    "folder": "tickets",
+    "name": "Ticket Support",
+    "version": "1.0.0",
+    "author": "Rafli",
+    "description": "Full-featured support ticket system. Users can open tickets and staff can manage them.",
+    "category": "admin-tools",
+    "min_core_version": "1.0.0",
+    "files": [
+      "__init__.py",
+      "module.ini"
+    ]
+  }
+]

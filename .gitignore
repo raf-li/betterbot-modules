@@ -1,0 +1,7 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore module secrets (should never be committed)
+**/.env
+**/secrets.*
