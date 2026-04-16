@@ -1,6 +1,6 @@
 # BetterBot Module Store
 
-This is the official module repository for [BetterBot](https://github.com/YOUR_USERNAME/betterbot).
+This is the official module repository for [BetterBot](https://github.com/raf-li/betterbot).
 
 ## Structure
 
@@ -50,7 +50,7 @@ In your `config.json`, add:
 
 ```json
 "module_store": {
-  "registry_url": "https://raw.githubusercontent.com/YOUR_USERNAME/betterbot-modules/main/registry.json",
-  "raw_base_url":  "https://raw.githubusercontent.com/YOUR_USERNAME/betterbot-modules/main"
+  "registry_url": "https://raw.githubusercontent.com/raf-li/betterbot-modules/main/registry.json",
+  "raw_base_url":  "https://raw.githubusercontent.com/raf-li/betterbot-modules/main"
 }
 ```
