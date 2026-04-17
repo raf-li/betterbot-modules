@@ -105,7 +105,8 @@ class TicketSystem(BaseModule):
             if not self.require_role(ctx, Role.MODERATOR): return
             self._admin_reply(ctx)
         else:
-            ctx.reply("❓ Usage: .ticket | .ticket list | .ticket done <id> | .ticket reply <id> <msg>")
+            t = ctx.trigger
+            ctx.reply(f"❓ Usage: {t} | {t} list | {t} done <id> | {t} reply <id> <msg>")
 
     # ── Ticket Flow ──────────────────────────────────────────────────────────
 
@@ -181,7 +182,7 @@ class TicketSystem(BaseModule):
 
     def _admin_reply(self, ctx):
         if len(ctx.args) < 3:
-            ctx.reply("⚠️ Usage: .ticket reply <id> <message>")
+            ctx.reply(f"⚠️ Usage: {ctx.trigger} reply <id> <message>")
             return
 
         tid = ctx.arg(1)
@@ -224,7 +225,7 @@ class TicketSystem(BaseModule):
             ctx.reply_pm(f"❌ Failed to send email for ticket #{tid}. Check SMTP settings in the Web Dashboard.")
 
     def _close_ticket(self, ctx):
-        if not ctx.require_args(2, "Usage: .ticket done <id>"): return
+        if not ctx.require_args(2, f"Usage: {ctx.trigger} done <id>"): return
         tid = ctx.arg(1)
         ticket = self.retrieve(f"ticket_{tid}")
 

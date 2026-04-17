@@ -1,0 +1,5 @@
+{
+    "greeting": "Halo, {name}! Selamat datang di server.",
+    "ping": "Pong! 🏓 (dari Indonesia)",
+    "info": "Bot ini berjalan menggunakan framework BetterBot."
+}
